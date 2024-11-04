@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import dev.failsafe.internal.util.Assert;
 
 public class Mysecondproject {
+	//Abdallah
 
 	WebDriver driver = new ChromeDriver();
 
@@ -226,7 +227,7 @@ public class Mysecondproject {
 			System.out.println("sorry the item out of the stock ");
 			String ExpectedResult = "https://automationteststore.com/";
 			String ActualResult = driver.getCurrentUrl();
-			Assert.assertEquals(ActualResult, ExpectedResult, "sosso");
+			Assert.assertEquals(ActualResult, ExpectedResult,"soso");
 
 		} else {
 
