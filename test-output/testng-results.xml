@@ -2,16 +2,16 @@
 <testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-04T23:05:18 GMT+03:00" name="Default suite" finished-at="2024-11-04T23:05:20 GMT+03:00" duration-ms="1593">
+  <suite started-at="2024-11-04T23:10:38 GMT+03:00" name="Default suite" finished-at="2024-11-04T23:10:40 GMT+03:00" duration-ms="1775">
     <groups>
     </groups>
-    <test started-at="2024-11-04T23:05:18 GMT+03:00" name="Default test" finished-at="2024-11-04T23:05:20 GMT+03:00" duration-ms="1593">
+    <test started-at="2024-11-04T23:10:38 GMT+03:00" name="Default test" finished-at="2024-11-04T23:10:40 GMT+03:00" duration-ms="1775">
       <class name="Mysecondproject">
-        <test-method is-config="true" signature="mySetup()[pri:0, instance:Mysecondproject@366c4480]" started-at="2024-11-04T23:05:18 GMT+03:00" name="mySetup" finished-at="2024-11-04T23:05:20 GMT+03:00" duration-ms="1523" status="PASS">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:Mysecondproject@2c7b5824]" started-at="2024-11-04T23:10:38 GMT+03:00" name="mySetup" finished-at="2024-11-04T23:10:40 GMT+03:00" duration-ms="1707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySetup -->
-        <test-method signature="AddItemToThecart()[pri:4, instance:Mysecondproject@366c4480]" started-at="2024-11-04T23:05:20 GMT+03:00" name="AddItemToThecart" finished-at="2024-11-04T23:05:20 GMT+03:00" duration-ms="12" status="FAIL">
+        <test-method signature="AddItemToThecart()[pri:4, instance:Mysecondproject@2c7b5824]" started-at="2024-11-04T23:10:40 GMT+03:00" name="AddItemToThecart" finished-at="2024-11-04T23:10:40 GMT+03:00" duration-ms="12" status="FAIL">
           <exception class="java.lang.Error">
             <message>
               <![CDATA[Unresolved compilation problems: 
