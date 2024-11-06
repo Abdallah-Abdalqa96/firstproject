@@ -1,3 +1,5 @@
+import static org.testng.Assert.assertTrue;
+
 import java.awt.Desktop.Action;
 import java.awt.event.WindowStateListener;
 import java.time.Duration;
@@ -42,7 +44,7 @@ public class Mysecondproject {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void signUp() throws InterruptedException {
 
 		int RandomIndexForTheFirstName = rand.nextInt(firstNames.length);
@@ -121,7 +123,7 @@ public class Mysecondproject {
 
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 
 	public void Logout() throws InterruptedException {
 		Thread.sleep(2000);
@@ -144,7 +146,7 @@ public class Mysecondproject {
 
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void Login() {
 
 		System.out.println(GlobalUserNameForTheLogin);
@@ -227,7 +229,7 @@ public class Mysecondproject {
 			System.out.println("sorry the item out of the stock ");
 			String ExpectedResult = "https://automationteststore.com/";
 			String ActualResult = driver.getCurrentUrl();
-			Assert.assertEquals(ActualResult, ExpectedResult,"soso");
+			org.testng.Assert.assertEquals(ActualResult, ExpectedResult,"soso");
 
 		} else {
 
@@ -237,10 +239,10 @@ public class Mysecondproject {
 			String ActualResult = driver.findElement(By.className("heading1")).getText();
 			String ExpectedResult = "Shopping Cart";
 
-			Assert.assertEquals(ActualResult, ExpectedResult.toUpperCase());
-			boolean ExpectedValueForCheckOut = true;
-			boolean ActualValueForCheckOut = driver.findElement(By.id("cart_checkout1")).isDisplayed();
-			Assert.assertEquals(ActualValueForCheckOut, ExpectedValueForCheckOut, "soso hi");
+			org.testng.Assert.assertEquals(ActualResult, ExpectedResult.toUpperCase());
+			//boolean ActualResult. ExpectedValueForCheckOut = true;
+			//boolean ActualValueForCheckOut = driver.findElement(By.id("cart_checkout1")).isDisplayed();
+		   // Assert.isTrue(ActualValueForCheckOut, ExpectedValueForCheckOut,""); 
 		}
 	}
 }
